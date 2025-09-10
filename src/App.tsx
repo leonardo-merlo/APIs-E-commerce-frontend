@@ -12,7 +12,7 @@ function App() {
       <header className="app-header">
         <div className="app-header-inner">
           <img
-            src="./src/assets/avatar-leo.png"
+            src="../public/avatar-leo.png"
             alt="Logo Leonardo"
             className="logo-box"
           />
