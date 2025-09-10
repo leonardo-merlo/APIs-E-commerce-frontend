@@ -1,17 +1,21 @@
-import { BrowserRouter, Link, Route, Routes, Navigate } from 'react-router-dom'
-import ClientesPage from './pages/ClientesPage'
-import ProdutosPage from './pages/ProdutosPage'
-import EstoquesPage from './pages/EstoquesPage'
-import PedidosPage from './pages/PedidosPage'
-import VendasPage from './pages/VendasPage'
-import './App.css'
+import { BrowserRouter, Link, Route, Routes, Navigate } from "react-router-dom";
+import ClientesPage from "./pages/ClientesPage";
+import ProdutosPage from "./pages/ProdutosPage";
+import EstoquesPage from "./pages/EstoquesPage";
+import PedidosPage from "./pages/PedidosPage";
+import VendasPage from "./pages/VendasPage";
+import "./App.css";
 
 function App() {
   return (
     <BrowserRouter>
       <header className="app-header">
         <div className="app-header-inner">
-          <img src="./src/assets/avatar-leo.png" alt="Logo Leonardo" className="logo-box" />
+          <img
+            src="./src/assets/avatar-leo.png"
+            alt="Logo Leonardo"
+            className="logo-box"
+          />
           <nav className="nav">
             <Link to="/clientes">Clientes</Link>
             <Link to="/produtos">Produtos</Link>
@@ -32,7 +36,7 @@ function App() {
         </Routes>
       </div>
     </BrowserRouter>
-  )
+  );
 }
 
-export default App
+export default App;
