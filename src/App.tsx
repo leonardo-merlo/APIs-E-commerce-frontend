@@ -5,17 +5,14 @@ import EstoquesPage from "./pages/EstoquesPage";
 import PedidosPage from "./pages/PedidosPage";
 import VendasPage from "./pages/VendasPage";
 import "./App.css";
+import avatarLeo from "./assets/avatar-leo.png";
 
 function App() {
   return (
     <BrowserRouter>
       <header className="app-header">
         <div className="app-header-inner">
-          <img
-            src="../public/avatar-leo.png"
-            alt="Logo Leonardo"
-            className="logo-box"
-          />
+          <img src={avatarLeo} alt="Logo Leonardo" className="logo-box" />
           <nav className="nav">
             <Link to="/clientes">Clientes</Link>
             <Link to="/produtos">Produtos</Link>
